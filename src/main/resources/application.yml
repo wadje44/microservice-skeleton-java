@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    platform: POSTGRESQL
+    url: jdbc:postgresql://localhost:5432/test
+    username: postgres
+    password: postgres
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        ddl-auto:
+         create-drop: true
+management:
+  security:
+    enabled: false
+  health:
+    db:
+      enabled: true
+    defaults:
+      enabled: true
+    diskspace:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics
+    metrics:
+      export:
+        atlas:
+          enabled: true
+endpoints:
+  health:
+    sensitive: false
+    enabled: true
+  metrics:
+    sensitive: false
+    enabled: true
+info:
+  app:
+    name: Spring Actuator Example
+    java:
+      version: 8
+    type: Spring Boot
