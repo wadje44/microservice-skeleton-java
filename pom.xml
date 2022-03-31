@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
     <properties>
         <docker.image.prefix>example</docker.image.prefix>
-        <springframework.version>2.1.6.RELEASE</springframework.version>
+        <springframework.version>2.5.12</springframework.version>
         <postgresql.version>42.2.6</postgresql.version>
         <lombok.version>1.18.8</lombok.version>
         <gatling.version>3.2.0</gatling.version>
