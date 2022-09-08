@@ -10,7 +10,7 @@
     <properties>
         <docker.image.prefix>example</docker.image.prefix>
         <springframework.version>2.1.6.RELEASE</springframework.version>
-        <postgresql.version>42.2.6</postgresql.version>
+        <postgresql.version>42.4.1</postgresql.version>
         <lombok.version>1.18.8</lombok.version>
         <gatling.version>3.2.0</gatling.version>
         <gatling-maven-plugin.version>3.0.3</gatling-maven-plugin.version>
